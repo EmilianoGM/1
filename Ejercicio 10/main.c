@@ -5,8 +5,8 @@ int main()
 {
     int numero;
     char respuesta = 's';
-    int promedioPositivos;
-    int promedioNegativos;
+    float promedioPositivos;
+    float promedioNegativos;
     int diferencia;
     int max;
     int min;
@@ -59,8 +59,8 @@ int main()
         scanf("%c", &respuesta);
     }
 
-    promedioPositivos = sumaPositivos / contPositivos;
-    promedioNegativos = sumaNegativos / contNegativos;
+    promedioPositivos = (float)sumaPositivos / contPositivos;
+    promedioNegativos = (float)sumaNegativos / contNegativos;
     diferencia = contPositivos - contNegativos;
 
     printf("\n");
@@ -71,8 +71,8 @@ int main()
     printf("Cantidad de negativos: %d\n", contNegativos);
     printf("Cantidad de ceros: %d\n", contCeros);
     printf("Cantidad de pares: %d\n", contPares);
-    printf("Promedio de positivos: %d\n", promedioPositivos);
-    printf("Promedio de negativos: %d\n", promedioNegativos);
+    printf("Promedio de positivos: %.2f\n", promedioPositivos);
+    printf("Promedio de negativos: %.2f\n", promedioNegativos);
     printf("Diferencia: %d\n", diferencia);
     printf("Maximo: %d\n", max);
     printf("Minimo: %d\n", min);
